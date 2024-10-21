@@ -248,21 +248,9 @@
   :ensure t
   )
 
-
 ;; session 工作區保存和加載 ;;
 (load-file "~/pallas-emacs/session.el")
 
-
-;; eaf ;;
-(add-to-list 'load-path "~/pallas-emacs/packages/emacs-application-framework/")
-(require 'eaf)
-(require 'eaf-git)
-(require 'eaf-browser)
-(require 'eaf-demo)
-
-
-(add-to-list 'load-path "~/pallas-emacs/src/animaker/")
-(require 'animaker)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;     编程语言
@@ -310,22 +298,12 @@
 
 ;; custom function
 
-(defun restart-animaker-process ()
-  "restart animaker process"
-  (interactive)
-  (winum-select-window-3)
-  (eaf-stop-process)
-  (eaf-open-animaker)
-  )
-
-;;(add-hook 'eaf-animaker-hook #'winum-select-window-2)
 
 
 
 
 (global-set-key (kbd "<f2>") 'open-emacs-file)
 (global-set-key (kbd "<f3>") 'open-init-file)
-(global-set-key (kbd "<f12>") 'restart-animaker-process)
 
 (global-set-key (kbd "M-1") 'winum-select-window-1)
 (global-set-key (kbd "M-2") 'winum-select-window-2)
