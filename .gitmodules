@@ -1,0 +1,16 @@
+[submodule "packages/emacs-application-framework"]
+path = packages/emacs-application-framework
+url = https://github.com/emacs-eaf/emacs-application-framework.git
+
+[submodule "packages/lsp-bridge"]
+path = packages/lsp-bridge
+url = https://github.com/manateelazycat/lsp-bridge.git
+
+[submodule "packages/popweb"]
+path = packages/popweb
+url = https://github.com/manateelazycat/popweb.git
+
+[submodule "packages/company-english-helper"]
+path = packages/company-english-helper
+url = https://github.com/manateelazycat/company-english-helper.git
+

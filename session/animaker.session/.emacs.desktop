@@ -1,0 +1,595 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Oct 21 17:03:07 2024
+;; Desktop file format version 208
+;; Emacs version 29.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (26390 6347 141320 225000) (desktop . "208") "pallasmanul@pallasmanul" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-PfEd-DejaVu Sans Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#bbc2cf") (background-color . "#242730") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#51afef") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (powerline-cache) (eyebrowse-last-slot . 1) (eyebrowse-current-slot . 0) (eyebrowse-window-configs (0 (((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 2548) (pixel-height . 1341) (total-width . 283) (total-height . 75) (normal-height . 1.0) (normal-width . 1.0) (buffer "Git [pallasmanul/pallas-emacs]" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("init.el" 5301 6085) ("test.py" 1 3) ("functions.py" 1 1720) (".emacs" 1 1))) "") (1 (((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 2548) (pixel-height . 1341) (total-width . 283) (total-height . 75) (normal-height . 1.0) (normal-width . 1.0) (buffer "*eshell*" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2294) (start . 549)) (prev-buffers ("test.py" 1 3))) "") (2 (((min-height . 4) (min-width . 20) (min-height-ignore . 4) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 72) (min-pixel-width . 180) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 72) (min-pixel-height-safe . 18) (min-pixel-width-safe . 36)) hc (pixel-width . 2548) (pixel-height . 1341) (total-width . 283) (total-height . 75) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1269) (pixel-height . 1341) (total-width . 141) (total-height . 75) (normal-height . 1.0) (normal-width . 0.49803767660910514) (buffer "eaf.el" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 77385) (start . 75663)) (prev-buffers ("eaf.el" 1 78325) ("eaf-epc.el" 1 1254) ("pyqt.org" 1 479) ("manimce.org" 1 255) ("session.el" 1 745) ("animaker.el" 1 77) ("eaf.py" 1 1) ("config.py" 1 1) ("elisp.org" 1 974) ("py_tab_widget.py" 1 1611) ("py_label.py" 1 417) ("py_checkbox.py" 1 572) ("py_combobox.py" 1 589) ("py_color_picker.py" 1 838) ("__init__.py<py_node_editor>" 1 667) ("py_window.py" 1 1257) ("py_push_button.py" 1 2301) ("py_number_slider.py" 1 2147) ("qt_core.py" 1 703) ("buffer.py" 1 1261) ("py_bottom_menu_button.py" 1 5055) ("json_themes.py" 1 1690) ("__init__.py<py_toggle>" 1 738) ("__init__.py<py_timeline>" 1 275) ("__init__.py<widgets>" 1 4263) ("py_bottom_menu.py" 1 1167) ("py_circular_progress.py" 1 795) ("py_left_menu_button.py" 1 1040) ("py_left_menu.py" 1 6133) ("pyav.org" 1 3) (".emacs" 1 1) ("functions.py" 1 1720) ("init.el" 1 7846) ("timelinewidget.h" 1 4047) ("timelineitems.cpp" 1 1034) ("Clip.qml" 1 1146) ("timecodedisplay.cpp" 1 3966) ("newtimeline_ui.ui" 1 1880) ("py_node_editor.py" 1 3122) ("py_node_editor_items.py" 1 9809) ("timelinewidget.cpp" 1 3026) ("shot_detect.py" 1 6415) ("flatten_video_tracks.py" 1 1) ("py_track_widgets.py" 1 1953) ("track_widgets.py" 1 706) ("py_timeline.py" 1 2127) ("animaker.py" 1 261) ("*scratch*" 1 1))) (leaf (last . t) (pixel-width . 1279) (pixel-height . 1341) (total-width . 142) (total-height . 75) (normal-height . 1.0) (normal-width . 0.5019623233908949) (buffer " *Minibuf-1*" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("eaf.el" 74424 77385)))) "")) (frameset--id . "7090-D6C6-F17D-BDA6") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (fullscreen-restore . maximized) (height . 75) (width . 281) (left . 0) (top . 0)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 2548) (pixel-height . 1341) (total-width . 283) (total-height . 74) (normal-height . 1.0) (normal-width . 1.0) (buffer "Git [pallasmanul/pallas-emacs]" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("init.el" 5340 5682) (".emacs" 1 1) ("GitHub - Pallasmanul/pallas-emacs: my custom emacs config" 1 1) ("Git [pallasmanul/pallas-emacs]" 1 1) ("test.py" 1 3) ("functions.py" 1 1720))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("eaf" "movi" "pytimeli" "paint" "_time_slider" "TimeSlider" "BaseItem" "time" "counteract_zoom" "scene" "BaseItem" "ClipItem" "itemis" "dark" "darkCyan" "dark"))
+(setq register-alist (list (desktop-list* 8 (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
+(setq file-name-history '(#("/home/pallasmanul/test.py" 0 25 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/packages/" 0 40 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/animaker.py" 0 55 (ivy-index 6)) #("/home/pallasmanul/OpenTimelineIO/src/opentimelineview/timeline_widget.py" 0 72 (ivy-index 7)) #("/home/pallasmanul/OpenTimelineIO/src/opentimelineview/track_widgets.py" 0 70 (ivy-index 8)) #("/home/pallasmanul/OpenTimelineIO/examples/shot_detect.py" 0 56 (ivy-index 12)) #("/home/pallasmanul/OpenTimelineIO/examples/flatten_video_tracks.py" 0 65 (ivy-index 8)) #("/home/pallasmanul/OpenTimelineIO/src/opentimelineview/" 0 54 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_timeline/py_timeline.py" 0 82 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor_items.py" 0 94 (ivy-index 8)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_timeline/py_track_widgets.py" 0 87 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor.py" 0 88 (ivy-index 4)) #("/home/pallasmanul/kdenlive/src/timeline2/view/timelinewidget.cpp" 0 64 (ivy-index 11)) #("/home/pallasmanul/kdenlive/src/ui/newtimeline_ui.ui" 0 51 (ivy-index 1)) #("/home/pallasmanul/kdenlive/src/widgets/timecodedisplay.cpp" 0 58 (ivy-index 0)) #("/home/pallasmanul/kdenlive/src/timeline2/view/qml/Clip.qml" 0 58 (ivy-index 4)) #("/home/pallasmanul/kdenlive/src/timeline2/view/previewmanager.cpp" 0 64 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_circular_progress/py_circular_progress.py" 0 100 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/__init__.py" 0 67 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_toggle/__init__.py" 0 77 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_timeline/__init__.py" 0 79 (ivy-index 2)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/core/json_themes.py" 0 67 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/themes/default.json" 0 67 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/doc/pyav.org" 0 43 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_bottom_menu/py_bottom_menu_button.py" 0 95 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/settings.json" 0 57 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_left_menu/py_left_menu.py" 0 84 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_bottom_menu/py_bottom_menu.py" 0 88 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_push_button/py_push_button.py" 0 88 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor_edge.py" 0 93 (ivy-index 6)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor_graphics.py" 0 97 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_number_slider/py_number_slider.py" 0 92 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/__init__.py" 0 82 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/common_node/node.py" 0 90 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/common_node/__init__.py" 0 94 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/core/functions.py" 0 65 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_left_menu/py_left_menu_button.py" 0 91 (ivy-index 1)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/core/json_settings.py" 0 69 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_color_picker/py_color_picker.py" 0 90 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_combobox/py_combobox.py" 0 82 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_checkbox/py_checkbox.py" 0 82 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_label/py_label.py" 0 76 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_tab_widget/py_tab_widget.py" 0 86 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor_socket.py" 0 95 (ivy-index 11)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor_node.py" 0 93 (ivy-index 10)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor_manager.py" 0 96 (ivy-index 9)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor_content_widget.py" 0 103 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_animate/py_animate_widget.py" 0 87 (ivy-index 7)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_animate/py_animate_clip.py" 0 85 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_animate/py_animate_property.py" 0 89 (ivy-index 6)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_animate/py_animate_item.py" 0 85 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_toggle/py_toggle.py" 0 78 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_left_column/py_left_column.py" 0 88 (ivy-index 6)) #("/home/pallasmanul/pallas-emacs/src/animaker/qt_core.py" 0 54 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_window/py_window.py" 0 78 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_window/py_window.py" 0 74 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_left_menu/py_left_menu.py" 0 80 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/config.py" 0 53 (ivy-index 12)) #("/home/pallasmanul/pallas-emacs/src/animaker/buffer.py" 0 53 (ivy-index 11)) #("/home/pallasmanul/pallas-emacs/src/animaker/core/json_settings.py" 0 65 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/core/json_themes.py" 0 63 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/core/functions.py" 0 61 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/packages/emacs-application-framework/eaf.py" 0 74 (ivy-index 18)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/__init__.py" 0 63 (ivy-index 29)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_node_editor/__init__.py" 0 78 (ivy-index 1)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_node_editor/" 0 67 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_animate/__init__.py" 0 74 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_left_menu/__init__.py" 0 76 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_bottom_menu/__init__.py" 0 78 (ivy-index 2)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_bottom_menu/py_bottom_menu.py" 0 84 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_bottom_menu/py_bottom_menu_button.py" 0 91 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_left_menu/py_left_menu_button.py" 0 87 (ivy-index 6)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_animate/py_animate_item.py" 0 81 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_animate/py_animate_widget.py" 0 83 (ivy-index 7)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_animate/py_animate_property.py" 0 85 (ivy-index 6)) #("/home/pallasmanul/pallas-emacs/src/animaker/widgets/py_animate/py_animate_clip.py" 0 81 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/src/animaker/" 0 44 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/animation.py" 0 56 (ivy-index 1)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/mobject/geometry/arc.py" 0 75 (ivy-index 3)) #("/home/pallasmanul/pallas-emacs/src/animaker/geometry.py" 0 55 (ivy-index 8)) #("/home/pallasmanul/pallas-emacs/src/animaker/miscWidget.py" 0 57 (ivy-index 9)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/typing.py" 0 61 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/_config/__init__.py" 0 71 (ivy-index 2)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/__init__.py" 0 63 (ivy-index 15)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/utils/file_ops.py" 0 69 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/renderer/cairo_renderer.py" 0 78 (ivy-index 4)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/renderer/opengl_renderer.py" 0 79 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/src/animaker/scene.py" 0 52 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/scene/scene.py" 0 66 (ivy-index 1)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/mobject/geometry/polygram.py" 0 80 (ivy-index 7)) #("/home/pallasmanul/pallas-emacs/src/animaker/render.py" 0 53 (ivy-index 8)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/mobject/mobject.py" 0 70 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/renderer/opengl_renderer_window.py" 0 86 (ivy-index 6)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/utils/opengl.py" 0 67 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/scene/scene_file_writer.py" 0 78 (ivy-index 5)) #("/home/pallasmanul/pallas-emacs/packages/manim/manim/camera/camera.py" 0 68 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/doc/manimce.org" 0 46 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/doc/pyqt.org" 0 43 (ivy-index 0)) #("/home/pallasmanul/pallas-emacs/packages/emacs-application-framework/app/demo/buffer.py" 0 86 (ivy-index 8)) #("/home/pallasmanul/pallas-emacs/packages/emacs-application-framework/core/eaf-epc.el" 0 83 (ivy-index 5))))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode paredit-mode yas-minor-mode)
+  5682
+  '(5515 nil)
+  nil
+  nil
+  '((buffer-display-time 26390 6297 282876 770000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (7327 7846 7846 7846 7846 7846 7846 7746 5423 8611 5638 5683 5423 7845 7818))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1
+  '(39 nil)
+  nil
+  nil
+  '((buffer-display-time 26390 6278 505282 852000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (39))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/packages/emacs-application-framework/eaf.el"
+  "eaf.el"
+  'emacs-lisp-mode
+  '(font-lock-mode eldoc-mode lsp-bridge-mode yas-minor-mode)
+  77385
+  '(75026 nil)
+  nil
+  nil
+  '((buffer-display-time 26390 6027 396785 166000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (8514 60285 34888 32404 23868 12681 28295 27671 25392 8968 9034 8609 8709 8609 8179 77385))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/test.py"
+  "test.py"
+  'python-mode
+  '(font-lock-mode eldoc-mode yas-minor-mode lsp-bridge-mode)
+  3
+  '(3 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26390 5884 654548 613000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (3))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/qt_core.py"
+  "qt_core.py"
+  'python-mode
+  '(font-lock-mode eldoc-mode lsp-bridge-mode yas-minor-mode)
+  1035
+  '(894 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26390 5450 128106 685000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (896 658 840 734 651 375 373 894 894 894 766 865 1035 306 1033 1035))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/animaker.py"
+  "animaker.py"
+  'python-mode
+  '(font-lock-mode eldoc-mode lsp-bridge-mode yas-minor-mode)
+  616
+  '(270 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26390 4927 572479 701000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (5749 4216 7989 8933 8635 5740 6070 8180 8120 8049 7990 8258 8049 6542 8258 616))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_timeline/py_timeline.py"
+  "py_timeline.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1844
+  '(2127 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26390 5074 370946 729000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 1667 1288 1161 1077 882 882 2079 2079 2079 2079 2079 2079 2079 2079 1844))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/OpenTimelineIO/src/opentimelineview/track_widgets.py"
+  "track_widgets.py"
+  'python-mode
+  '(lsp-bridge-mode yas-minor-mode eldoc-mode font-lock-mode)
+  706
+  '(18736 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26390 1326 390770 607000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1318 7901 14413 15676 15367 14413 17654 14405 15250 7359 7359 7540 7425 7308 7308 706))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_timeline/py_track_widgets.py"
+  "py_track_widgets.py"
+  'python-mode
+  '(lsp-bridge-mode yas-minor-mode eldoc-mode font-lock-mode text-scale-mode)
+  1953
+  '(768 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26390 629 579585 320000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 577 635 731 262 1085 1148 1158 337 575 508 529 1159 1242 1256 704))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/OpenTimelineIO/examples/flatten_video_tracks.py"
+  "flatten_video_tracks.py"
+  'python-mode
+  '(lsp-bridge-mode yas-minor-mode eldoc-mode font-lock-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26389 60414 908264 933000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/OpenTimelineIO/examples/shot_detect.py"
+  "shot_detect.py"
+  'python-mode
+  '(lsp-bridge-mode yas-minor-mode eldoc-mode font-lock-mode)
+  6415
+  '(2065 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26389 60413 208975 898000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3320 6415))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/kdenlive/src/timeline2/view/timelinewidget.cpp"
+  "timelinewidget.cpp"
+  'c++-mode
+  '(lsp-bridge-mode font-lock-mode yas-minor-mode)
+  3026
+  '(2061 nil)
+  nil
+  nil
+  '((buffer-display-time 26389 60144 445245 81000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2061 2250 18771 18964 18964 18771 18771 18771 18759 1949 2129 2064 2129 2256 2250 3026))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor_items.py"
+  "py_node_editor_items.py"
+  'python-mode
+  '(lsp-bridge-mode yas-minor-mode eldoc-mode font-lock-mode)
+  9809
+  '(9775 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26389 58945 212126 186000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (6367 9809))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/py_node_editor.py"
+  "py_node_editor.py"
+  'python-mode
+  '(font-lock-mode eldoc-mode lsp-bridge-mode yas-minor-mode)
+  3122
+  '(1622 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26389 57287 167668 863000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (2210 5058 5143 5161 5044 4992 4963 5044 5005 4930 4930 4838 9269 4938 4860 1483))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/kdenlive/src/ui/newtimeline_ui.ui"
+  "newtimeline_ui.ui"
+  'nxml-mode
+  '(rng-validate-mode lsp-bridge-mode yas-minor-mode font-lock-mode)
+  1880
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26389 53703 510271 994000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/kdenlive/src/widgets/timecodedisplay.cpp"
+  "timecodedisplay.cpp"
+  'c++-mode
+  '(lsp-bridge-mode yas-minor-mode font-lock-mode)
+  3966
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26389 53629 498964 443000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/kdenlive/src/timeline2/view/qml/Clip.qml"
+  "Clip.qml"
+  'fundamental-mode
+  '(yas-minor-mode font-lock-mode)
+  1146
+  '(1146 nil)
+  nil
+  nil
+  '((buffer-display-time 26389 53607 239174 678000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/kdenlive/src/timeline2/view/qml/timelineitems.cpp"
+  "timelineitems.cpp"
+  'c++-mode
+  '(lsp-bridge-mode yas-minor-mode font-lock-mode)
+  1034
+  '(10995 nil)
+  nil
+  nil
+  '((buffer-display-time 26389 53160 750558 510000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (11851 11010 10997 10995 1034))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/kdenlive/src/timeline2/view/timelinewidget.h"
+  "timelinewidget.h"
+  'c++-mode
+  '(lsp-bridge-mode yas-minor-mode font-lock-mode)
+  4047
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 26389 52869 511270 943000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/core/functions.py"
+  "functions.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1720
+  '(987 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26389 50986 914141 916000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (1350 1707 1777 1170 1170 1170 1314 1210 1470 1720))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/doc/pyav.org"
+  "pyav.org"
+  'org-mode
+  '(lsp-bridge-mode font-lock-mode yas-minor-mode)
+  3
+  '(3 nil)
+  nil
+  nil
+  '((buffer-display-time 26389 48833 259255 774000) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring (1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_left_menu/py_left_menu.py"
+  "py_left_menu.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  6133
+  '(1551 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 62186 214045 439000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (1281 5188 3055 1183 1153 1153 1 1167 1197 1138 1158 1153 1253 1230 1167 6133))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_left_menu/py_left_menu_button.py"
+  "py_left_menu_button.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1040
+  '(2969 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 46370 534135 816000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (1444 11667 10246 8607 2031 1555 8468 3491 8365 8365 8898 8907 6320 6584 5987 10136))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_circular_progress/py_circular_progress.py"
+  "py_circular_progress.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  795
+  '(2476 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 41229 208623 177000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (814 1039 870 2331 2476 2477 2477 2477 2495 2522 2522 2851 2893 2955 2997 795))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_bottom_menu/py_bottom_menu.py"
+  "py_bottom_menu.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1167
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 38379 861304 951000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (1623 4831 2079 1798 1194 1167))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/__init__.py"
+  "__init__.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  4263
+  '(4147 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 6499 815562 223000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (4021 1 1462 3422 4263 4263))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_timeline/__init__.py"
+  "__init__.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  275
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 6446 719487 67000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_toggle/__init__.py"
+  "__init__.py"
+  'python-mode
+  '(font-lock-mode eldoc-mode lsp-bridge-mode yas-minor-mode)
+  738
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 6417 291636 386000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/core/json_themes.py"
+  "json_themes.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1690
+  '(1315 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 6663 659917 806000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (1666 1130 1146 1729 1690 741 1455 2406 2406 1413))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_bottom_menu/py_bottom_menu_button.py"
+  "py_bottom_menu_button.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  5055
+  '(3388 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 6204 247774 629000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (4779 4736))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/buffer.py"
+  "buffer.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1261
+  '(878 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26388 6111 157104 515000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (878 835 939 778 902 902 939 939 939 939 939 756 778 756 778 1261))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_number_slider/py_number_slider.py"
+  "py_number_slider.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  2147
+  '(643 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 61968 314318 154000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (643 2147))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_push_button/py_push_button.py"
+  "py_push_button.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  2301
+  '(2395 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 61799 269010 837000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (1 2395 2425 2301))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_window/py_window.py"
+  "py_window.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1257
+  '(1216 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 59764 808181 237000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring (1357 1037 1482 1199 1357 2859))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_node_editor/__init__.py"
+  "__init__.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  667
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 59061 960103 237000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_color_picker/py_color_picker.py"
+  "py_color_picker.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  838
+  '(838 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 54337 684214 832000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_combobox/py_combobox.py"
+  "py_combobox.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  589
+  '(589 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 54314 200489 908000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_checkbox/py_checkbox.py"
+  "py_checkbox.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  572
+  '(572 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 54294 443653 754000) (buffer-file-coding-system . utf-8-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_label/py_label.py"
+  "py_label.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  417
+  '(417 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 54256 942683 847000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/gui/widgets/py_tab_widget/py_tab_widget.py"
+  "py_tab_widget.py"
+  'python-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  1611
+  '(1611 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 54241 310242 763000) (buffer-file-coding-system . undecided-dos))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/doc/elisp.org"
+  "elisp.org"
+  'org-mode
+  '(lsp-bridge-mode font-lock-mode yas-minor-mode)
+  974
+  '(936 nil)
+  nil
+  nil
+  '((buffer-display-time 26387 52741 678707 622000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring (1522 1374 1357 1233 1183 1114 1051 708 1014 1013 19 8 20 742 708 10))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/config.py"
+  "config.py"
+  'python-mode
+  '(font-lock-mode eldoc-mode lsp-bridge-mode yas-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 52606 49586 599000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/packages/emacs-application-framework/eaf.py"
+  "eaf.py"
+  'python-mode
+  '(font-lock-mode eldoc-mode lsp-bridge-mode yas-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26387 50356 991139 314000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/src/animaker/animaker.el"
+  "animaker.el"
+  'emacs-lisp-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  77
+  '(274 nil)
+  nil
+  nil
+  '((buffer-display-time 26387 49019 829912 62000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (273 1 252 274 273 252 274))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/session.el"
+  "session.el"
+  'emacs-lisp-mode
+  '(lsp-bridge-mode eldoc-mode font-lock-mode yas-minor-mode)
+  745
+  '(1131 nil)
+  nil
+  nil
+  '((buffer-display-time 26387 48893 943749 859000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (1124 1212 745))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/doc/manimce.org"
+  "manimce.org"
+  'org-mode
+  '(rime-mode font-lock-mode lsp-bridge-mode yas-minor-mode)
+  255
+  '(296 nil)
+  nil
+  nil
+  '((buffer-display-time 26387 37628 307514 492000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring (133 76 35 11 4 181 181 181 181 181 181 11 20 181 20 20))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/doc/pyqt.org"
+  "pyqt.org"
+  'org-mode
+  '(lsp-bridge-mode font-lock-mode yas-minor-mode)
+  479
+  '(1218 nil)
+  nil
+  nil
+  '((buffer-display-time 26387 29382 374968 790000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring (1028 477 982 982 977 977 969 890 801 753 789 758 756 744 700 479))))
+
+(desktop-create-buffer 208
+  "/home/pallasmanul/pallas-emacs/packages/emacs-application-framework/core/eaf-epc.el"
+  "eaf-epc.el"
+  'emacs-lisp-mode
+  '(font-lock-mode eldoc-mode lsp-bridge-mode yas-minor-mode)
+  1254
+  '(1254 nil)
+  nil
+  nil
+  '((buffer-display-time 26390 5376 398380 549000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring nil)))
+
