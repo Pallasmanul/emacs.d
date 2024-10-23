@@ -46,6 +46,15 @@
 (paredit-mode t)                      ;; 自勭關閉括號
 ;;(desktop-save-mode 1)                 ;; 保存佈局
 
+(setq python-indent-offset 4)
+(setq python-indent-guess-indent-offset-verbose nil)
+
+;; session 工作區保存和加載 ;;
+(load-file "~/pallas-emacs/session.el")
+(add-hook 'after-init-hook 'sessions-open-at-start) ;; 打開Emacs后自勭加載sessions
+(add-hook 'kill-emacs-hook 'sessions-save)          ;; 關閉Emacs后自勭保存sessions
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;     自定义函数
@@ -109,14 +118,17 @@
                      (registers . 5)))
   :init
 ;;  (dashboard-setup-startup-hook)  ; 啓動emacs時不顯示
-  (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*"))))
+;;  (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
+  )
 
 
 (use-package doom-themes
   :ensure t
   :init
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+        doom-themes-enable-italic t  ; if nil, italics is universally disabled
+	)
+  
   (load-theme 'doom-vibrant t)
   (doom-themes-visual-bell-config)
   )
@@ -135,6 +147,13 @@
   (centaur-tabs-mode t)
   )
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;     英文翻譯
+;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package bing-dict
+  :ensure t
+)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;     实用工具
@@ -228,6 +247,8 @@
 ;; 寫作模式 ;;
 (use-package writeroom-mode
   :ensure t
+  :config
+  (setq writeroom-width 160)
   )
 
 ;;  搜索增強 ;;
@@ -239,7 +260,6 @@
   ("\C-s" . swiper)
   )
 
-
 (use-package wgrep
   :ensure t
   )
@@ -248,15 +268,75 @@
   :ensure t
   )
 
-;; session 工作區保存和加載 ;;
-(load-file "~/pallas-emacs/session.el")
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;     文檔系統
+;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+(add-hook 'org-mode-hook #'turn-on-org-cdlatex)
+;;(setq org-format-latex-header "")
+;;(setq org-preview-latex-image-directory "/tmp/ltximg/")
+;;(setq org-preview-latex-default-process )
+(org-babel-do-load-languages 'org-babel-load-languages '((emacs-lisp . t)
+							 (python . t)
+							 (C . t)
+							 ))
+
+(use-package cdlatex
+  :ensure t
+  )
+
+(use-package org-modern
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook #'org-modern-mode)
+  (setq org-modern-star 'replace)
+)
+
+(use-package org-latex-impatient
+  :ensure t
+  :hook (org-mode . org-latex-impatient-mode)
+  :init
+  (setq org-latex-impatient-tex2svg-bin
+        ;; location of tex2svg executable
+        "~/node_modules/mathjax-node-cli/bin/tex2svg")
+)
+
+(use-package org-fragtog
+  :ensure t
+  :hook   ((org-mode . org-fragtog-mode))
+  )
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;     版本管理
+;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package magit
+  :ensure t
+  )
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;     虛擬機環境
+;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; python 虛擬環境 ;;
+(use-package pyvenv
+  :ensure t
+  :config
+  (setq pyvenv-workon "animaker")  ; Default venv
+  (add-hook 'python-mode-hook 'pyvenv-mode)
+)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;     编程语言
 ;;;;;;;;;;;;;;;;;;;;;;;;
-
-(add-to-list 'load-path "~/pallas-emacs/packages/lsp-bridge/")
 
 ;; 模板  ;;
 (use-package yasnippet
@@ -270,12 +350,81 @@
   :ensure t
   )
 
-(setq lsp-bridge-python-lsp-server "pylsp")
-(setq sp-bridge-python-command "python3")
-(require 'lsp-bridge)
-(global-lsp-bridge-mode)
+;; 代碼補全 ;;
+(use-package company
+  :ensure t
+  :init
+  ;; Customize company backends.
+  (add-hook 'emacs-list-mode-hook #'company-mode)
+  (add-hook 'python-mode-hook #'company-mode)
+)
 
-(framep (selected-window))
+(use-package company-posframe 
+  :ensure t
+  :hook (company-mode . company-box-mode))
+
+;; 代碼檢查 ;;
+(use-package flycheck
+  :ensure t
+  :config
+  (setq flycheck-indication-mode nil)
+  (setq flycheck-highlighting-style nil)
+)
+
+;; python lsp ;;
+(use-package lsp-mode
+  :ensure t
+  :config
+  (with-eval-after-load 'lsp-mode
+    (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
+    (add-hook 'lsp-mode-hook #'flycheck-mode)
+    (add-hook 'lsp-mode-hook #'company-mode)
+    )
+  (setq lsp-headerline-breadcrumb-enable nil)
+  (setq lsp-pylsp-plugins-autopep8-enabled t)
+  :hook (
+         (python-mode . lsp)
+         (lsp-mode . lsp-enable-which-key-integration)
+	 )
+  :commands lsp-mode
+  )
+
+;; 添加lsp ;;
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode
+  :init
+  (add-hook 'lsp-mode-hook 'lsp-ui-mode)
+  :config
+  (setq lsp-ui-peek-enable nil)
+  (setq lsp-ui-doc-enable nil)
+  (setq lsp-ui-imenu-enable nil)
+  (setq lsp-ui-flycheck-enable t)
+  (setq lsp-ui-sideline-enable nil)
+  (setq lsp-ui-sideline-show-code-actions nil)
+  (setq lsp-ui-sideline-show-hover nil)  
+  (setq lsp-ui-sideline-ignore-duplicate nil)
+)
+
+;; dap-mode 調試器 ;;
+(use-package dap-mode
+  :ensure t
+  :after lsp-mode
+  :config
+  (require 'dap-python)
+  (setq dap-python-debugger 'debugpy)
+)
+
+;; quickrun 快速運行程序 ;;
+(use-package quickrun
+  :ensure t
+  :after lsp-mode
+  :config
+  (setq quickrun-focus-p nil)
+  (setq quickrun-timeout-seconds 20)
+  (setq quickrun-truncate-lines nil)
+
+)
 
 
 
@@ -284,26 +433,40 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; animaker ;;
+(defun animaker_run ()
+  (interactive)
+  (let ((buf (find-file-noselect "~/animaker/main.py")))
+    (with-current-buffer buf
+      (quickrun)))
+)
+
+(defun animaker_debug ()
+  (interactive)
+  (dap-mode 'toggle)
+  (dap-ui-mode 'toggle)
+  (print   (let ((buf (find-file-noselect "~/animaker/main.py")))
+    (with-current-buffer buf
+      (default-value 'dap-mode))))
+)
+
+
 
 ;; linux ;;
 
 ;; embeded ;;
 
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;     快捷方式
 ;;;;;;;;;;;;;;;;;;;;;;;;
-
-
 ;; custom function
-
-
-
-
 
 (global-set-key (kbd "<f2>") 'open-emacs-file)
 (global-set-key (kbd "<f3>") 'open-init-file)
+(global-set-key (kbd "<f4>") 'animaker_run)
+(global-set-key (kbd "<f5>") 'animaker_debug)
+
+
 
 (global-set-key (kbd "M-1") 'winum-select-window-1)
 (global-set-key (kbd "M-2") 'winum-select-window-2)
@@ -311,83 +474,107 @@
 (global-set-key (kbd "M-4") 'winum-select-window-4)
 (global-set-key (kbd "M-5") 'winum-select-window-5)
 
-(general-create-definer my-file-definer
-  :prefix "M-m f"
-  :keymaps 'override)
 
+(general-define-key
+ :status '(normal visual)
+ :keymaps 'override
+ :prefix "M-m"
 
-(my-file-definer
-  "r" #'load-current-file)
+ "e" 'bing-dict-brief
 
-(general-create-definer my-layout-definer
-  :prefix "M-m l"
-  :keymaps 'override
-  )
+ "l"  '(:wk "layout")
+ "lc" 'eyebrowse-create-window-config
+ "ld" 'eyebrowse-close-window-config
+ "lb" 'eyebrowse-switch-to-window-config
+ 
+ "lo" 'sessions-open
+ "ls" 'sessions-save
 
-(my-layout-definer
+ ;; swithc layout
+ "l0" 'eyebrowse-switch-to-window-config-0
+ "l1" 'eyebrowse-switch-to-window-config-1
+ "l2" 'eyebrowse-switch-to-window-config-2
+ "l3" 'eyebrowse-switch-to-window-config-3
+ "l4" 'eyebrowse-switch-to-window-config-4
+ "l5" 'eyebrowse-switch-to-window-config-5
 
-  "c" #'eyebrowse-create-window-config
-  "d" #'eyebrowse-close-window-config
-  "b" #'eyebrowse-switch-to-window-config
-  
-  ;; swithc layout
-  "0" #'eyebrowse-switch-to-window-config-0
-  "1" #'eyebrowse-switch-to-window-config-1
-  "2" #'eyebrowse-switch-to-window-config-2
-  "3" #'eyebrowse-switch-to-window-config-3
-  "4" #'eyebrowse-switch-to-window-config-4
-  "5" #'eyebrowse-switch-to-window-config-5
- )
+ "s"  '(:wk "search")
+ "ss"  'deadgrep
 
-(general-create-definer my-session-definer
-  :prefix "M-m s"
-  :keymaps 'override
-  )
+ "f"  '(:wk "files")
+ "ff" 'find-file
+ "fr" 'load-current-file
 
-;; (my-session-definer
-;;   "o" #'sessions-open)
+ "g"  '(:wk "magit")
+ "gg" 'magit
 
-;; (my-session-definer
-;;   "s" #'sessions-save)
+ "p"  '(:wk "program")
 
-(my-session-definer
-  "s" #'deadgrep)
+ "pv" '(:wk "venv")
+ "pvc" 'pyvenv-create
+ "pva" 'pyvenv-activate
+ "pvd" 'pyvenv-deactivate
 
+ "d"  '(:wk "debug")
+ "dd" 'dap-debug
+ "dr" 'dap-debug-restart
+ "dk" 'dap-disconnect
 
+ "db" '(:wk "breakpoint")
+ "dba" 'dap-breakpoint-add
+ "dbt" 'dap-breakpoint-toggle
+ "dbk" 'dap-breakpoint-delete-all
 
-(add-hook 'after-init-hook 'sessions-open-at-start)
-(add-hook 'kill-emacs-hook 'sessions-save)
+ "dw" '(:wk "debug window")
+ "dws" 'dap-ui-show-many-windows
+ "dwh" 'dap-ui-hide-many-windows
+
+ "w"  '(:wk "window")
+ "ww" 'writeroom-mode
+
+ "T"  '(:wk "theme")
+ "Tt"  'load-theme
+ 
+)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;     系统环景变量
 ;;;;;;;;;;;;;;;;;;;;;;;;
 
-
 ;;  WSL2 Ubuntu24.02 ;;
 
+;; 換源
+;; Types: deb
+;; URIs: https://mirrors.tuna.tsinghua.edu.cn/ubuntu
+;; Suites: noble noble-updates noble-backports
+;; Components: main restricted universe multiverse
+;; Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
-;; sudo apt install librime-dev
+;; dkpg問題
+;; cd /var/lib/dpkg
+;; sudo mv info info.bak
+;; sudo mkdir info
+;; sudo apt-get update
 
-;; fix eaf on wsl2 ubuntu24.02
-;; sudo apt install libxkbcommon-x11-0libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0
+;; 中文輸入  sudo apt install librime-dev
 
 ;; 安裝字體和icon
 ;; M-x all-the-icons-install-fonts
 
-;; python language server
-;; python3-pylsp*
-;; python3-pylsp python3-pylsp-black python3-pylsp-jsonrpc python3-pylsp-rope python3-pylsp-isort python3-pylsp-mypy
-;; ruff pakcage  curl -LsSf https://astral.sh/ruff/install.sh | sh
-;;
-;; render          python3-srt   python3-av   python3-pydub
-;; ripgrep  搜索增強
+;; grep   ripgrep 
+;; python lsp   python3 -m pip install python-lsp-server[all]   
+;; org latex preview    npm install mathjax-node-cli   apt-get install divpng
+;; org export           sudo apt-get install texlive
 
-(defun refresh_environment()
+;; fix PySide6/PyQt6 on wsl2 ubuntu24.02
+;; sudo apt install libxkbcommon-x11-0libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0
+
+
+
+(defun prepare_environment()
   (interactive)
   (async-shell-command "sudo apt install librime-dev libxkbcommon-x11-0libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0")
-  (async-shell-command "sudo apt install python3-pylsp*")
-  (async-shell-command "curl -LsSf https://astral.sh/ruff/install.sh | sh")
-  (async-shell-command "git submodule update")
   )
 
 
